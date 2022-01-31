@@ -8460,311 +8460,6 @@ components:
       enum: 
         - "WARNING"
 
-
-    MessageCode400_AIS: 
-      description: Message codes defined for AIS for HTTP Error code 400 (BAD_REQUEST).
-      type: string
-      enum: 
-        - "FORMAT_ERROR"              #gen
-        - "PARAMETER_NOT_CONSISTENT"  #gen
-        - "PARAMETER_NOT_SUPPORTED"   #gen
-        - "SERVICE_INVALID"           #gen
-        - "RESOURCE_UNKNOWN"          #gen
-        - "RESOURCE_EXPIRED"          #gen
-        - "RESOURCE_BLOCKED"          #gen
-        - "TIMESTAMP_INVALID"         #gen
-        - "PERIOD_INVALID"            #gen
-        - "SCA_METHOD_UNKNOWN"        #gen
-        - "SCA_INVALID"               #gen
-        - "CONSENT_UNKNOWN"           #gen
-        - "SESSIONS_NOT_SUPPORTED"    #AIS
-
-
-    MessageCode400_PIS: 
-      description: Message codes defined for PIS for HTTP Error code 400 (BAD_REQUEST).
-      type: string
-      enum: 
-        - "FORMAT_ERROR"              #gen
-        - "PARAMETER_NOT_CONSISTENT"  #gen
-        - "PARAMETER_NOT_SUPPORTED"   #gen
-        - "SERVICE_INVALID"           #gen
-        - "RESOURCE_UNKNOWN"          #gen
-        - "RESOURCE_EXPIRED"          #gen
-        - "RESOURCE_BLOCKED"          #gen
-        - "TIMESTAMP_INVALID"         #gen
-        - "PERIOD_INVALID"            #gen
-        - "SCA_METHOD_UNKNOWN"        #gen
-        - "SCA_INVALID"               #gen
-        - "CONSENT_UNKNOWN"           #gen
-        - "PAYMENT_FAILED"            #PIS
-        - "EXECUTION_DATE_INVALID"    #PIS
-
-
-    MessageCode400_PIIS: 
-      description: Message codes defined for PIIS for HTTP Error code 400 (BAD_REQUEST).
-      type: string
-      enum: 
-        - "FORMAT_ERROR"              #gen
-        - "PARAMETER_NOT_CONSISTENT"  #gen
-        - "PARAMETER_NOT_SUPPORTED"   #gen
-        - "SERVICE_INVALID"           #gen
-        - "RESOURCE_UNKNOWN"          #gen
-        - "RESOURCE_EXPIRED"          #gen
-        - "RESOURCE_BLOCKED"          #gen
-        - "TIMESTAMP_INVALID"         #gen
-        - "PERIOD_INVALID"            #gen
-        - "SCA_METHOD_UNKNOWN"        #gen
-        - "SCA_INVALID"               #gen
-        - "CONSENT_UNKNOWN"           #gen
-        - "CARD_INVALID"              #PIIS
-        - "NO_PIIS_ACTIVATION"        #PIIS
-
-
-    MessageCode400_SBS: 
-      description: Message codes defined for signing baskets for HTTP Error code 400 (BAD_REQUEST).
-      type: string
-      enum: 
-        - "FORMAT_ERROR"              #gen
-        - "PARAMETER_NOT_CONSISTENT"  #gen
-        - "PARAMETER_NOT_SUPPORTED"   #gen
-        - "SERVICE_INVALID"           #gen
-        - "RESOURCE_UNKNOWN"          #gen
-        - "RESOURCE_EXPIRED"          #gen
-        - "RESOURCE_BLOCKED"          #gen
-        - "TIMESTAMP_INVALID"         #gen
-        - "PERIOD_INVALID"            #gen
-        - "SCA_METHOD_UNKNOWN"        #gen
-        - "SCA_INVALID"               #gen
-        - "CONSENT_UNKNOWN"           #gen
-        - "REFERENCE_MIX_INVALID"     #SBS
-
-
-    MessageCode401_PIS: 
-      description: Message codes defined for PIS for HTTP Error code 401 (UNAUTHORIZED).
-      type: string
-      enum: 
-        - "CERTIFICATE_INVALID"       #gen
-        - "ROLE_INVALID"              #gen
-        - "CERTIFICATE_EXPIRED"       #gen
-        - "CERTIFICATE_BLOCKED"       #gen
-        - "CERTIFICATE_REVOKE"        #gen
-        - "CERTIFICATE_MISSING"       #gen
-        - "SIGNATURE_INVALID"         #gen
-        - "SIGNATURE_MISSING"         #gen
-        - "CORPORATE_ID_INVALID"      #gen
-        - "PSU_CREDENTIALS_INVALID"   #gen
-        - "CONSENT_INVALID"           #gen, AIS
-        - "CONSENT_EXPIRED"           #gen
-        - "TOKEN_UNKNOWN"             #gen
-        - "TOKEN_INVALID"             #gen
-        - "TOKEN_EXPIRED"             #gen
-        - "REQUIRED_KID_MISSING"      #PIS
-
-
-    MessageCode401_AIS: 
-      description: Message codes defined for AIS for HTTP Error code 401 (UNAUTHORIZED).
-      type: string
-      enum: 
-        - "CERTIFICATE_INVALID"       #gen
-        - "ROLE_INVALID"              #gen
-        - "CERTIFICATE_EXPIRED"       #gen
-        - "CERTIFICATE_BLOCKED"       #gen
-        - "CERTIFICATE_REVOKE"        #gen
-        - "CERTIFICATE_MISSING"       #gen
-        - "SIGNATURE_INVALID"         #gen
-        - "SIGNATURE_MISSING"         #gen
-        - "CORPORATE_ID_INVALID"      #gen
-        - "PSU_CREDENTIALS_INVALID"   #gen
-        - "CONSENT_INVALID"           #gen, AIS
-        - "CONSENT_EXPIRED"           #gen
-        - "TOKEN_UNKNOWN"             #gen
-        - "TOKEN_INVALID"             #gen
-        - "TOKEN_EXPIRED"             #gen
-
-
-    MessageCode401_PIIS: 
-      description: Message codes defined for PIIS for HTTP Error code 401 (UNAUTHORIZED).
-      type: string
-      enum: 
-        - "CERTIFICATE_INVALID"       #gen
-        - "ROLE_INVALID"              #gen
-        - "CERTIFICATE_EXPIRED"       #gen
-        - "CERTIFICATE_BLOCKED"       #gen
-        - "CERTIFICATE_REVOKE"        #gen
-        - "CERTIFICATE_MISSING"       #gen
-        - "SIGNATURE_INVALID"         #gen
-        - "SIGNATURE_MISSING"         #gen
-        - "CORPORATE_ID_INVALID"      #gen
-        - "PSU_CREDENTIALS_INVALID"   #gen
-        - "CONSENT_INVALID"           #gen, AIS
-        - "CONSENT_EXPIRED"           #gen
-        - "TOKEN_UNKNOWN"             #gen
-        - "TOKEN_INVALID"             #gen
-        - "TOKEN_EXPIRED"             #gen
-
-
-    MessageCode401_SBS: 
-      description: Message codes defined for signing baskets for HTTP Error code 401 (UNAUTHORIZED).
-      type: string
-      enum: 
-        - "CERTIFICATE_INVALID"       #gen
-        - "ROLE_INVALID"              #gen
-        - "CERTIFICATE_EXPIRED"       #gen
-        - "CERTIFICATE_BLOCKED"       #gen
-        - "CERTIFICATE_REVOKE"        #gen
-        - "CERTIFICATE_MISSING"       #gen
-        - "SIGNATURE_INVALID"         #gen
-        - "SIGNATURE_MISSING"         #gen
-        - "CORPORATE_ID_INVALID"      #gen
-        - "PSU_CREDENTIALS_INVALID"   #gen
-        - "CONSENT_INVALID"           #gen, AIS
-        - "CONSENT_EXPIRED"           #gen
-        - "TOKEN_UNKNOWN"             #gen
-        - "TOKEN_INVALID"             #gen
-        - "TOKEN_EXPIRED"             #gen
-        
-        
-    MessageCode403_PIS: 
-      description: Message codes defined defined for PIS for PIS for HTTP Error code 403 (FORBIDDEN).
-      type: string
-      enum: 
-        - "CONSENT_UNKNOWN"           #gen
-        - "SERVICE_BLOCKED"           #gen
-        - "RESOURCE_UNKNOWN"          #gen
-        - "RESOURCE_EXPIRED"          #gen
-        - "PRODUCT_INVALID"           #PIS
-
-    MessageCode403_AIS: 
-      description: Message codes defined for AIS for HTTP Error code 403 (FORBIDDEN).
-      type: string
-      enum: 
-        - "CONSENT_UNKNOWN"           #gen
-        - "SERVICE_BLOCKED"           #gen
-        - "RESOURCE_UNKNOWN"          #gen
-        - "RESOURCE_EXPIRED"          #gen
-
-
-    MessageCode403_PIIS: 
-      description: Message codes defined for PIIS for HTTP Error code 403 (FORBIDDEN).
-      type: string
-      enum: 
-        - "CONSENT_UNKNOWN"           #gen
-        - "SERVICE_BLOCKED"           #gen
-        - "RESOURCE_UNKNOWN"          #gen
-        - "RESOURCE_EXPIRED"          #gen
-
-
-    MessageCode403_SBS: 
-      description: Message codes defined for signing baskets for HTTP Error code 403 (FORBIDDEN).
-      type: string
-      enum: 
-        - "CONSENT_UNKNOWN"           #gen
-        - "SERVICE_BLOCKED"           #gen
-        - "RESOURCE_UNKNOWN"          #gen
-        - "RESOURCE_EXPIRED"          #gen
-
-
-    MessageCode404_PIS: 
-      description: Message codes defined for PIS for HTTP Error code 404 (NOT FOUND).
-      type: string
-      enum: 
-        - "RESOURCE_UNKNOWN"          #gens
-        - "PRODUCT_UNKNOWN"           #PIS
-
-
-    MessageCode404_AIS: 
-      description: Message codes defined for AIS for HTTP Error code 404 (NOT FOUND).
-      type: string
-      enum: 
-        - "RESOURCE_UNKNOWN"          #gens
-
-
-    MessageCode404_PIIS: 
-      description: Message codes defined for PIIS for HTTP Error code 404 (NOT FOUND).
-      type: string
-      enum: 
-        - "RESOURCE_UNKNOWN"          #gens
-
-
-    MessageCode404_SBS: 
-      description: Message codes defined for signing baskets for HTTP Error code 404 (NOT FOUND).
-      type: string
-      enum: 
-        - "RESOURCE_UNKNOWN"          #gens
-
-
-    MessageCode405_PIS: 
-      description: Message codes defined for payment cancelations PIS for HTTP Error code 405 (METHOD NOT ALLOWED).
-      type: string
-      enum: 
-        - "SERVICE_INVALID"           #gens
-
-
-    MessageCode405_PIS_CANC: 
-      description: Message codes defined for payment cancelations PIS for HTTP Error code 405 (METHOD NOT ALLOWED).
-      type: string
-      enum: 
-        - "CANCELLATION_INVALID"      #PIS
-        - "SERVICE_INVALID"           #gens
-
-    MessageCode405_AIS: 
-      description: Message codes defined for AIS for HTTP Error code 405 (METHOD NOT ALLOWED).
-      type: string
-      enum: 
-        - "SERVICE_INVALID"           #gens
-
-    MessageCode405_PIIS: 
-      description: Message codes defined for PIIS for HTTP Error code 405 (METHOD NOT ALLOWED).
-      type: string
-      enum: 
-        - "SERVICE_INVALID"           #gens
-
-    MessageCode405_SBS: 
-      description: Message codes defined for SBS for HTTP Error code 405 (METHOD NOT ALLOWED).
-      type: string
-      enum: 
-        - "SERVICE_INVALID"           #gens
-
-
-    MessageCode406_AIS: 
-      description: Message codes defined for AIS for HTTP Error code 406 (NOT ACCEPTABLE).
-      type: string
-      enum: 
-        - "REQUESTED_FORMATS_INVALID"  #AIS
-
-    MessageCode409_AIS: 
-      description: Message codes defined for AIS for HTTP Error code 409 (CONFLICT).
-      type: string
-      enum: 
-        - "STATUS_INVALID"            #gen
-
-    MessageCode409_PIS: 
-      description: Message codes defined for PIS for HTTP Error code 409 (CONFLICT).
-      type: string
-      enum: 
-        - "STATUS_INVALID"            #gen
-
-    MessageCode409_PIIS: 
-      description: Message codes defined for PIIS for HTTP Error code 409 (CONFLICT).
-      type: string
-      enum: 
-        - "STATUS_INVALID"            #gen
-
-    MessageCode409_SBS: 
-      description: Message codes defined for signing baskets for HTTP Error code 409 (CONFLICT).
-      type: string
-      enum: 
-        - "REFERENCE_STATUS_INVALID"  #SBS
-        - "STATUS_INVALID"            #gen
-
-
-    MessageCode429_AIS: 
-      description: Message codes for HTTP Error code 429 (TOO MANY REQUESTS).
-      type: string
-      enum: 
-        - "ACCESS_EXCEEDED"           #AIS
-
-
   #####################################################
   # Next Gen proprietary TPP-messages
   #####################################################
@@ -8792,471 +8487,11 @@ components:
           $ref: "#/components/schemas/tppMessageText"
 
 
-    tppMessage400_AIS:
-      type: object
-      required:
-        - category
-        - code
-      properties:
-        category:
-           $ref: "#/components/schemas/tppMessageCategory"
-        code:
-          $ref: "#/components/schemas/MessageCode400_AIS"
-        path:
-          type: string
-        text:
-          $ref: "#/components/schemas/tppMessageText"
-
-
-    tppMessage400_PIS:
-      type: object
-      required:
-        - category
-        - code
-      properties:
-        category:
-           $ref: "#/components/schemas/tppMessageCategory"
-        code:
-          $ref: "#/components/schemas/MessageCode400_PIS"
-        path:
-          type: string
-        text:
-          $ref: "#/components/schemas/tppMessageText"
-
-
-    tppMessage400_PIIS:
-      type: object
-      required:
-        - category
-        - code
-      properties:
-        category:
-           $ref: "#/components/schemas/tppMessageCategory"
-        code:
-          $ref: "#/components/schemas/MessageCode400_PIIS"
-        path:
-          type: string
-        text:
-          $ref: "#/components/schemas/tppMessageText"
-
-
-    tppMessage400_SBS:
-      type: object
-      required:
-        - category
-        - code
-      properties:
-        category:
-           $ref: "#/components/schemas/tppMessageCategory"
-        code:
-          $ref: "#/components/schemas/MessageCode400_SBS"
-        path:
-          type: string
-        text:
-          $ref: "#/components/schemas/tppMessageText"
-
-
-    tppMessage401_PIS:
-      type: object
-      required:
-        - category
-        - code
-      properties:
-        category:
-           $ref: "#/components/schemas/tppMessageCategory"
-        code:
-          $ref: "#/components/schemas/MessageCode401_PIS"
-        path:
-          type: string
-        text:
-          $ref: "#/components/schemas/tppMessageText"
-
-    tppMessage401_AIS:
-      type: object
-      required:
-        - category
-        - code
-      properties:
-        category:
-           $ref: "#/components/schemas/tppMessageCategory"
-        code:
-          $ref: "#/components/schemas/MessageCode401_AIS"
-        path:
-          type: string
-        text:
-          $ref: "#/components/schemas/tppMessageText"
-
-
-    tppMessage401_PIIS:
-      type: object
-      required:
-        - category
-        - code
-      properties:
-        category:
-           $ref: "#/components/schemas/tppMessageCategory"
-        code:
-          $ref: "#/components/schemas/MessageCode401_PIIS"
-        path:
-          type: string
-        text:
-          $ref: "#/components/schemas/tppMessageText"
-
-
-    tppMessage401_SBS:
-      type: object
-      required:
-        - category
-        - code
-      properties:
-        category:
-           $ref: "#/components/schemas/tppMessageCategory"
-        code:
-          $ref: "#/components/schemas/MessageCode401_SBS"
-        path:
-          type: string
-        text:
-          $ref: "#/components/schemas/tppMessageText"
-
-
-    tppMessage403_PIS:
-      type: object
-      required:
-        - category
-        - code
-      properties:
-        category:
-           $ref: "#/components/schemas/tppMessageCategory"
-        code:
-          $ref: "#/components/schemas/MessageCode403_PIS"
-        path:
-          type: string
-        text:
-          $ref: "#/components/schemas/tppMessageText"
-
-
-    tppMessage403_AIS:
-      type: object
-      required:
-        - category
-        - code
-      properties:
-        category:
-           $ref: "#/components/schemas/tppMessageCategory"
-        code:
-          $ref: "#/components/schemas/MessageCode403_AIS"
-        path:
-          type: string
-        text:
-          $ref: "#/components/schemas/tppMessageText"
-
-
-    tppMessage403_PIIS:
-      type: object
-      required:
-        - category
-        - code
-      properties:
-        category:
-           $ref: "#/components/schemas/tppMessageCategory"
-        code:
-          $ref: "#/components/schemas/MessageCode403_PIIS"
-        path:
-          type: string
-        text:
-          $ref: "#/components/schemas/tppMessageText"
-
-
-    tppMessage403_SBS:
-      type: object
-      required:
-        - category
-        - code
-      properties:
-        category:
-           $ref: "#/components/schemas/tppMessageCategory"
-        code:
-          $ref: "#/components/schemas/MessageCode403_SBS"
-        path:
-          type: string
-        text:
-          $ref: "#/components/schemas/tppMessageText"
-
-
-    tppMessage404_PIS:
-      type: object
-      required:
-        - category
-        - code
-      properties:
-        category:
-           $ref: "#/components/schemas/tppMessageCategory"
-        code:
-          $ref: "#/components/schemas/MessageCode404_PIS"
-        path:
-          type: string
-        text:
-          $ref: "#/components/schemas/tppMessageText"
-
-
-    tppMessage404_AIS:
-      type: object
-      required:
-        - category
-        - code
-      properties:
-        category:
-           $ref: "#/components/schemas/tppMessageCategory"
-        code:
-          $ref: "#/components/schemas/MessageCode404_AIS"
-        path:
-          type: string
-        text:
-          $ref: "#/components/schemas/tppMessageText"
-
-
-    tppMessage404_PIIS:
-      type: object
-      required:
-        - category
-        - code
-      properties:
-        category:
-           $ref: "#/components/schemas/tppMessageCategory"
-        code:
-          $ref: "#/components/schemas/MessageCode404_PIIS"
-        path:
-          type: string
-        text:
-          $ref: "#/components/schemas/tppMessageText"
-
-
-    tppMessage404_SBS:
-      type: object
-      required:
-        - category
-        - code
-      properties:
-        category:
-           $ref: "#/components/schemas/tppMessageCategory"
-        code:
-          $ref: "#/components/schemas/MessageCode404_SBS"
-        path:
-          type: string
-        text:
-          $ref: "#/components/schemas/tppMessageText"
-
-
-    tppMessage405_PIS:
-      type: object
-      required:
-        - category
-        - code
-      properties:
-        category:
-           $ref: "#/components/schemas/tppMessageCategory"
-        code:
-          $ref: "#/components/schemas/MessageCode405_PIS"
-        path:
-          type: string
-        text:
-          $ref: "#/components/schemas/tppMessageText"
-
-
-    tppMessage405_PIS_CANC:
-      type: object
-      required:
-        - category
-        - code
-      properties:
-        category:
-           $ref: "#/components/schemas/tppMessageCategory"
-        code:
-          $ref: "#/components/schemas/MessageCode405_PIS_CANC"
-        path:
-          type: string
-        text:
-          $ref: "#/components/schemas/tppMessageText"
-
-
-    tppMessage405_AIS:
-      type: object
-      required:
-        - category
-        - code
-      properties:
-        category:
-           $ref: "#/components/schemas/tppMessageCategory"
-        code:
-          $ref: "#/components/schemas/MessageCode405_AIS"
-        path:
-          type: string
-        text:
-          $ref: "#/components/schemas/tppMessageText"
-
-
-    tppMessage405_PIIS:
-      type: object
-      required:
-        - category
-        - code
-      properties:
-        category:
-           $ref: "#/components/schemas/tppMessageCategory"
-        code:
-          $ref: "#/components/schemas/MessageCode405_PIIS"
-        path:
-          type: string
-        text:
-          $ref: "#/components/schemas/tppMessageText"
-
-
-    tppMessage405_SBS:
-      type: object
-      required:
-        - category
-        - code
-      properties:
-        category:
-           $ref: "#/components/schemas/tppMessageCategory"
-        code:
-          $ref: "#/components/schemas/MessageCode405_SBS"
-        path:
-          type: string
-        text:
-          $ref: "#/components/schemas/tppMessageText"
-
-
-    tppMessage409_PIS:
-      type: object
-      required:
-        - category
-        - code
-      properties:
-        category:
-           $ref: "#/components/schemas/tppMessageCategory"
-        code:
-          $ref: "#/components/schemas/MessageCode409_PIS"
-        path:
-          type: string
-        text:
-          $ref: "#/components/schemas/tppMessageText"
-
-
-    tppMessage406_AIS:
-      type: object
-      required:
-        - category
-        - code
-      properties:
-        category:
-           $ref: "#/components/schemas/tppMessageCategory"
-        code:
-          $ref: "#/components/schemas/MessageCode406_AIS"
-        path:
-          type: string
-        text:
-          $ref: "#/components/schemas/tppMessageText"
-
-
-
-
-
-    tppMessage409_AIS:
-      type: object
-      required:
-        - category
-        - code
-      properties:
-        category:
-           $ref: "#/components/schemas/tppMessageCategory"
-        code:
-          $ref: "#/components/schemas/MessageCode409_AIS"
-        path:
-          type: string
-        text:
-          $ref: "#/components/schemas/tppMessageText"
-
-
-
-    tppMessage409_PIIS:
-      type: object
-      required:
-        - category
-        - code
-      properties:
-        category:
-           $ref: "#/components/schemas/tppMessageCategory"
-        code:
-          $ref: "#/components/schemas/MessageCode409_PIIS"
-        path:
-          type: string
-        text:
-          $ref: "#/components/schemas/tppMessageText"
-
-
-    tppMessage409_SBS:
-      type: object
-      required:
-        - category
-        - code
-      properties:
-        category:
-           $ref: "#/components/schemas/tppMessageCategory"
-        code:
-          $ref: "#/components/schemas/MessageCode409_SBS"
-        path:
-          type: string
-        text:
-          $ref: "#/components/schemas/tppMessageText"
-
-
-    tppMessage429_AIS:
-      type: object
-      required:
-        - category
-        - code
-      properties:
-        category:
-           $ref: "#/components/schemas/tppMessageCategory"
-        code:
-          $ref: "#/components/schemas/MessageCode429_AIS"
-        path:
-          type: string
-        text:
-          $ref: "#/components/schemas/tppMessageText"
-
-
   #####################################################
   # RFC7807 Messages
   #####################################################
 
-    tppErrorTitle:
-      description: |
-        Short human readable description of error type. 
-        Could be in local language. 
-        To be provided by ASPSPs.
-      type: string
-      maxLength: 70
-
-    tppErrorDetail:
-      description: |
-        Detailed human readable text specific to this instance of the error. 
-        XPath might be used to point to the issue generating the error in addition.
-        Remark for Future: In future, a dedicated field might be introduced for the XPath.
-      type: string
-      maxLength: 500
-
-
-
-
-  #####################################################
-  # RFC7807 Messages
-  #####################################################
-
-
-
-    Error400_PIS: 
+    Error_RFC7807: 
       description: |
         Standardised definition of reporting error information according to [RFC7807] 
         in case of a HTTP error code 400 for PIS.
@@ -9286,1819 +8521,18 @@ components:
             Remark for Future: In future, a dedicated field might be introduced for the XPath.
           type: string
           maxLength: 500
-        code:
-          $ref: "#/components/schemas/MessageCode400_PIS"
-        additionalErrors:
+        sourceSystemErrorCode:
           description: |
-            Array of Error Information Blocks.
-            
-            Might be used if more than one error is to be communicated
-          type: array
-          items: #ErrorInformation
-            description: This is a data element to support the declaration of additional errors in the context of [RFC7807]. 
-            type: object
-            required:
-              - code
-            properties:
-              title:
-                $ref: "#/components/schemas/tppErrorTitle"
-              detail:
-                $ref: "#/components/schemas/tppErrorDetail"
-              code:
-                $ref: "#/components/schemas/MessageCode400_PIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error400_AIS: 
-      description: |
-        Standardised definition of reporting error information according to [RFC7807] 
-        in case of a HTTP error code 400 for AIS.
-      type: object
-      required:
-        - type
-        - code
-      properties:
-        type: 
-          description: |
-            A URI reference [RFC3986] that identifies the problem type. 
-            Remark For Future: These URI will be provided by NextGenPSD2 in future.
+            An error code originated from the source system.
           type: string
           format: uri
-          maxLength: 70
-        title:
+          maxLength: 35
+        bankErrorCode:
           description: |
-            Short human readable description of error type. 
-            Could be in local language. 
-            To be provided by ASPSPs.
-          type: string
-          maxLength: 70
-        detail:
-          description: |
-            Detailed human readable text specific to this instance of the error. 
-            XPath might be used to point to the issue generating the error in addition.
-            Remark for Future: In future, a dedicated field might be introduced for the XPath.
-          type: string
-          maxLength: 500
-        code:
-          $ref: "#/components/schemas/MessageCode400_AIS"
-        additionalErrors:
-          description: |
-            Array of Error Information Blocks.
-            
-            Might be used if more than one error is to be communicated
-          type: array
-          items: #ErrorInformation
-            description: This is a data element to support the declaration of additional errors in the context of [RFC7807]. 
-            type: object
-            required:
-              - code
-            properties:
-              title:
-                $ref: "#/components/schemas/tppErrorTitle"
-              detail:
-                $ref: "#/components/schemas/tppErrorDetail"
-              code:
-                $ref: "#/components/schemas/MessageCode400_AIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error400_PIIS: 
-      description: |
-        Standardised definition of reporting error information according to [RFC7807] 
-        in case of a HTTP error code 400 for PIIS.
-      type: object
-      required:
-        - type
-        - code
-      properties:
-        type: 
-          description: |
-            A URI reference [RFC3986] that identifies the problem type. 
-            Remark For Future: These URI will be provided by NextGenPSD2 in future.
+            A Bank specific error code.
           type: string
           format: uri
-          maxLength: 70
-        title:
-          description: |
-            Short human readable description of error type. 
-            Could be in local language. 
-            To be provided by ASPSPs.
-          type: string
-          maxLength: 70
-        detail:
-          description: |
-            Detailed human readable text specific to this instance of the error. 
-            XPath might be used to point to the issue generating the error in addition.
-            Remark for Future: In future, a dedicated field might be introduced for the XPath.
-          type: string
-          maxLength: 500
-        code:
-          $ref: "#/components/schemas/MessageCode400_PIIS"
-        additionalErrors:
-          description: |
-            Array of Error Information Blocks.
-            
-            Might be used if more than one error is to be communicated
-          type: array
-          items: #ErrorInformation
-            description: This is a data element to support the declaration of additional errors in the context of [RFC7807]. 
-            type: object
-            required:
-              - code
-            properties:
-              title:
-                $ref: "#/components/schemas/tppErrorTitle"
-              detail:
-                $ref: "#/components/schemas/tppErrorDetail"
-              code:
-                $ref: "#/components/schemas/MessageCode400_PIIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error400_SBS: 
-      description: |
-        Standardised definition of reporting error information according to [RFC7807] 
-        in case of a HTTP error code 400 for signing baskets.
-      type: object
-      required:
-        - type
-        - code
-      properties:
-        type: 
-          description: |
-            A URI reference [RFC3986] that identifies the problem type. 
-            Remark For Future: These URI will be provided by NextGenPSD2 in future.
-          type: string
-          format: uri
-          maxLength: 70
-        title:
-          description: |
-            Short human readable description of error type. 
-            Could be in local language. 
-            To be provided by ASPSPs.
-          type: string
-          maxLength: 70
-        detail:
-          description: |
-            Detailed human readable text specific to this instance of the error. 
-            XPath might be used to point to the issue generating the error in addition.
-            Remark for Future: In future, a dedicated field might be introduced for the XPath.
-          type: string
-          maxLength: 500
-        code:
-          $ref: "#/components/schemas/MessageCode400_SBS"
-        additionalErrors:
-          description: |
-            Array of Error Information Blocks.
-            
-            Might be used if more than one error is to be communicated
-          type: array
-          items: #ErrorInformation
-            description: This is a data element to support the declaration of additional errors in the context of [RFC7807]. 
-            type: object
-            required:
-              - code
-            properties:
-              title:
-                $ref: "#/components/schemas/tppErrorTitle"
-              detail:
-                $ref: "#/components/schemas/tppErrorDetail"
-              code:
-                $ref: "#/components/schemas/MessageCode400_SBS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error401_PIS: 
-      description: |
-        Standardised definition of reporting error information according to [RFC7807] 
-        in case of a HTTP error code 401 for PIS.
-      type: object
-      required:
-        - type
-        - code
-      properties:
-        type: 
-          description: |
-            A URI reference [RFC3986] that identifies the problem type. 
-            Remark For Future: These URI will be provided by NextGenPSD2 in future.
-          type: string
-          format: uri
-          maxLength: 70
-        title:
-          description: |
-            Short human readable description of error type. 
-            Could be in local language. 
-            To be provided by ASPSPs.
-          type: string
-          maxLength: 70
-        detail:
-          description: |
-            Detailed human readable text specific to this instance of the error. 
-            XPath might be used to point to the issue generating the error in addition.
-            Remark for Future: In future, a dedicated field might be introduced for the XPath.
-          type: string
-          maxLength: 500
-        code:
-          $ref: "#/components/schemas/MessageCode401_PIS"
-        additionalErrors:
-          description: |
-            Array of Error Information Blocks.
-            
-            Might be used if more than one error is to be communicated
-          type: array
-          items: #ErrorInformation
-            description: This is a data element to support the declaration of additional errors in the context of [RFC7807]. 
-            type: object
-            required:
-              - code
-            properties:
-              title:
-                $ref: "#/components/schemas/tppErrorTitle"
-              detail:
-                $ref: "#/components/schemas/tppErrorDetail"
-              code:
-                $ref: "#/components/schemas/MessageCode401_PIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error401_AIS: 
-      description: |
-        Standardised definition of reporting error information according to [RFC7807] 
-        in case of a HTTP error code 401 for AIS.
-      type: object
-      required:
-        - type
-        - code
-      properties:
-        type: 
-          description: |
-            A URI reference [RFC3986] that identifies the problem type. 
-            Remark For Future: These URI will be provided by NextGenPSD2 in future.
-          type: string
-          format: uri
-          maxLength: 70
-        title:
-          description: |
-            Short human readable description of error type. 
-            Could be in local language. 
-            To be provided by ASPSPs.
-          type: string
-          maxLength: 70
-        detail:
-          description: |
-            Detailed human readable text specific to this instance of the error. 
-            XPath might be used to point to the issue generating the error in addition.
-            Remark for Future: In future, a dedicated field might be introduced for the XPath.
-          type: string
-          maxLength: 500
-        code:
-          $ref: "#/components/schemas/MessageCode401_AIS"
-        additionalErrors:
-          description: |
-            Array of Error Information Blocks.
-            
-            Might be used if more than one error is to be communicated
-          type: array
-          items: #ErrorInformation
-            description: This is a data element to support the declaration of additional errors in the context of [RFC7807]. 
-            type: object
-            required:
-              - code
-            properties:
-              title:
-                $ref: "#/components/schemas/tppErrorTitle"
-              detail:
-                $ref: "#/components/schemas/tppErrorDetail"
-              code:
-                $ref: "#/components/schemas/MessageCode401_AIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error401_PIIS: 
-      description: |
-        Standardised definition of reporting error information according to [RFC7807] 
-        in case of a HTTP error code 401 for PIIS.
-      type: object
-      required:
-        - type
-        - code
-      properties:
-        type: 
-          description: |
-            A URI reference [RFC3986] that identifies the problem type. 
-            Remark For Future: These URI will be provided by NextGenPSD2 in future.
-          type: string
-          format: uri
-          maxLength: 70
-        title:
-          description: |
-            Short human readable description of error type. 
-            Could be in local language. 
-            To be provided by ASPSPs.
-          type: string
-          maxLength: 70
-        detail:
-          description: |
-            Detailed human readable text specific to this instance of the error. 
-            XPath might be used to point to the issue generating the error in addition.
-            Remark for Future: In future, a dedicated field might be introduced for the XPath.
-          type: string
-          maxLength: 500
-        code:
-          $ref: "#/components/schemas/MessageCode401_PIS"
-        additionalErrors:
-          description: |
-            Array of Error Information Blocks.
-            
-            Might be used if more than one error is to be communicated
-          type: array
-          items: #ErrorInformation
-            description: This is a data element to support the declaration of additional errors in the context of [RFC7807]. 
-            type: object
-            required:
-              - code
-            properties:
-              title:
-                $ref: "#/components/schemas/tppErrorTitle"
-              detail:
-                $ref: "#/components/schemas/tppErrorDetail"
-              code:
-                $ref: "#/components/schemas/MessageCode401_PIIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error401_SBS: 
-      description: |
-        Standardised definition of reporting error information according to [RFC7807] 
-        in case of a HTTP error code 401 for signing baskets.
-      type: object
-      required:
-        - type
-        - code
-      properties:
-        type: 
-          description: |
-            A URI reference [RFC3986] that identifies the problem type. 
-            Remark For Future: These URI will be provided by NextGenPSD2 in future.
-          type: string
-          format: uri
-          maxLength: 70
-        title:
-          description: |
-            Short human readable description of error type. 
-            Could be in local language. 
-            To be provided by ASPSPs.
-          type: string
-          maxLength: 70
-        detail:
-          description: |
-            Detailed human readable text specific to this instance of the error. 
-            XPath might be used to point to the issue generating the error in addition.
-            Remark for Future: In future, a dedicated field might be introduced for the XPath.
-          type: string
-          maxLength: 500
-        code:
-          $ref: "#/components/schemas/MessageCode401_SBS"
-        additionalErrors:
-          description: |
-            Array of Error Information Blocks.
-            
-            Might be used if more than one error is to be communicated
-          type: array
-          items: #ErrorInformation
-            description: This is a data element to support the declaration of additional errors in the context of [RFC7807]. 
-            type: object
-            required:
-              - code
-            properties:
-              title:
-                $ref: "#/components/schemas/tppErrorTitle"
-              detail:
-                $ref: "#/components/schemas/tppErrorDetail"
-              code:
-                $ref: "#/components/schemas/MessageCode401_SBS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error403_PIS: 
-      description: |
-        Standardised definition of reporting error information according to [RFC7807] 
-        in case of a HTTP error code 403 for PIS.
-      type: object
-      required:
-        - type
-        - code
-      properties:
-        type: 
-          description: |
-            A URI reference [RFC3986] that identifies the problem type. 
-            Remark For Future: These URI will be provided by NextGenPSD2 in future.
-          type: string
-          format: uri
-          maxLength: 70
-        title:
-          description: |
-            Short human readable description of error type. 
-            Could be in local language. 
-            To be provided by ASPSPs.
-          type: string
-          maxLength: 70
-        detail:
-          description: |
-            Detailed human readable text specific to this instance of the error. 
-            XPath might be used to point to the issue generating the error in addition.
-            Remark for Future: In future, a dedicated field might be introduced for the XPath.
-          type: string
-          maxLength: 500
-        code:
-          $ref: "#/components/schemas/MessageCode403_PIS"
-        additionalErrors:
-          description: |
-            Array of Error Information Blocks.
-            
-            Might be used if more than one error is to be communicated
-          type: array
-          items: #ErrorInformation
-            description: This is a data element to support the declaration of additional errors in the context of [RFC7807]. 
-            type: object
-            required:
-              - code
-            properties:
-              title:
-                $ref: "#/components/schemas/tppErrorTitle"
-              detail:
-                $ref: "#/components/schemas/tppErrorDetail"
-              code:
-                $ref: "#/components/schemas/MessageCode403_PIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error403_AIS: 
-      description: |
-        Standardised definition of reporting error information according to [RFC7807] 
-        in case of a HTTP error code 403 for AIS.
-      type: object
-      required:
-        - type
-        - code
-      properties:
-        type: 
-          description: |
-            A URI reference [RFC3986] that identifies the problem type. 
-            Remark For Future: These URI will be provided by NextGenPSD2 in future.
-          type: string
-          format: uri
-          maxLength: 70
-        title:
-          description: |
-            Short human readable description of error type. 
-            Could be in local language. 
-            To be provided by ASPSPs.
-          type: string
-          maxLength: 70
-        detail:
-          description: |
-            Detailed human readable text specific to this instance of the error. 
-            XPath might be used to point to the issue generating the error in addition.
-            Remark for Future: In future, a dedicated field might be introduced for the XPath.
-          type: string
-          maxLength: 500
-        code:
-          $ref: "#/components/schemas/MessageCode403_AIS"
-        additionalErrors:
-          description: |
-            Array of Error Information Blocks.
-            
-            Might be used if more than one error is to be communicated
-          type: array
-          items: #ErrorInformation
-            description: This is a data element to support the declaration of additional errors in the context of [RFC7807]. 
-            type: object
-            required:
-              - code
-            properties:
-              title:
-                $ref: "#/components/schemas/tppErrorTitle"
-              detail:
-                $ref: "#/components/schemas/tppErrorDetail"
-              code:
-                $ref: "#/components/schemas/MessageCode403_AIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error403_PIIS: 
-      description: |
-        Standardised definition of reporting error information according to [RFC7807] 
-        in case of a HTTP error code 403 for PIIS.
-      type: object
-      required:
-        - type
-        - code
-      properties:
-        type: 
-          description: |
-            A URI reference [RFC3986] that identifies the problem type. 
-            Remark For Future: These URI will be provided by NextGenPSD2 in future.
-          type: string
-          format: uri
-          maxLength: 70
-        title:
-          description: |
-            Short human readable description of error type. 
-            Could be in local language. 
-            To be provided by ASPSPs.
-          type: string
-          maxLength: 70
-        detail:
-          description: |
-            Detailed human readable text specific to this instance of the error. 
-            XPath might be used to point to the issue generating the error in addition.
-            Remark for Future: In future, a dedicated field might be introduced for the XPath.
-          type: string
-          maxLength: 500
-        code:
-          $ref: "#/components/schemas/MessageCode403_PIIS"
-        additionalErrors:
-          description: |
-            Array of Error Information Blocks.
-            
-            Might be used if more than one error is to be communicated
-          type: array
-          items: #ErrorInformation
-            description: This is a data element to support the declaration of additional errors in the context of [RFC7807]. 
-            type: object
-            required:
-              - code
-            properties:
-              title:
-                $ref: "#/components/schemas/tppErrorTitle"
-              detail:
-                $ref: "#/components/schemas/tppErrorDetail"
-              code:
-                $ref: "#/components/schemas/MessageCode403_PIIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error403_SBS: 
-      description: |
-        Standardised definition of reporting error information according to [RFC7807] 
-        in case of a HTTP error code 403 for signing baskets.
-      type: object
-      required:
-        - type
-        - code
-      properties:
-        type: 
-          description: |
-            A URI reference [RFC3986] that identifies the problem type. 
-            Remark For Future: These URI will be provided by NextGenPSD2 in future.
-          type: string
-          format: uri
-          maxLength: 70
-        title:
-          description: |
-            Short human readable description of error type. 
-            Could be in local language. 
-            To be provided by ASPSPs.
-          type: string
-          maxLength: 70
-        detail:
-          description: |
-            Detailed human readable text specific to this instance of the error. 
-            XPath might be used to point to the issue generating the error in addition.
-            Remark for Future: In future, a dedicated field might be introduced for the XPath.
-          type: string
-          maxLength: 500
-        code:
-          $ref: "#/components/schemas/MessageCode403_SBS"
-        additionalErrors:
-          description: |
-            Array of Error Information Blocks.
-            
-            Might be used if more than one error is to be communicated
-          type: array
-          items: #ErrorInformation
-            description: This is a data element to support the declaration of additional errors in the context of [RFC7807]. 
-            type: object
-            required:
-              - code
-            properties:
-              title:
-                $ref: "#/components/schemas/tppErrorTitle"
-              detail:
-                $ref: "#/components/schemas/tppErrorDetail"
-              code:
-                $ref: "#/components/schemas/MessageCode403_SBS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error404_PIS: 
-      description: |
-        Standardised definition of reporting error information according to [RFC7807] 
-        in case of a HTTP error code 404 for PIS.
-      type: object
-      required:
-        - type
-        - code
-      properties:
-        type: 
-          description: |
-            A URI reference [RFC3986] that identifies the problem type. 
-            Remark For Future: These URI will be provided by NextGenPSD2 in future.
-          type: string
-          format: uri
-          maxLength: 70
-        title:
-          description: |
-            Short human readable description of error type. 
-            Could be in local language. 
-            To be provided by ASPSPs.
-          type: string
-          maxLength: 70
-        detail:
-          description: |
-            Detailed human readable text specific to this instance of the error. 
-            XPath might be used to point to the issue generating the error in addition.
-            Remark for Future: In future, a dedicated field might be introduced for the XPath.
-          type: string
-          maxLength: 500
-        code:
-          $ref: "#/components/schemas/MessageCode404_PIS"
-        additionalErrors:
-          description: |
-            Array of Error Information Blocks.
-            
-            Might be used if more than one error is to be communicated
-          type: array
-          items: #ErrorInformation
-            description: This is a data element to support the declaration of additional errors in the context of [RFC7807]. 
-            type: object
-            required:
-              - code
-            properties:
-              title:
-                $ref: "#/components/schemas/tppErrorTitle"
-              detail:
-                $ref: "#/components/schemas/tppErrorDetail"
-              code:
-                $ref: "#/components/schemas/MessageCode404_PIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error404_AIS: 
-      description: |
-        Standardised definition of reporting error information according to [RFC7807] 
-        in case of a HTTP error code 404 for AIS.
-      type: object
-      required:
-        - type
-        - code
-      properties:
-        type: 
-          description: |
-            A URI reference [RFC3986] that identifies the problem type. 
-            Remark For Future: These URI will be provided by NextGenPSD2 in future.
-          type: string
-          format: uri
-          maxLength: 70
-        title:
-          description: |
-            Short human readable description of error type. 
-            Could be in local language. 
-            To be provided by ASPSPs.
-          type: string
-          maxLength: 70
-        detail:
-          description: |
-            Detailed human readable text specific to this instance of the error. 
-            XPath might be used to point to the issue generating the error in addition.
-            Remark for Future: In future, a dedicated field might be introduced for the XPath.
-          type: string
-          maxLength: 500
-        code:
-          $ref: "#/components/schemas/MessageCode404_AIS"
-        additionalErrors:
-          description: |
-            Array of Error Information Blocks.
-            
-            Might be used if more than one error is to be communicated
-          type: array
-          items: #ErrorInformation
-            description: This is a data element to support the declaration of additional errors in the context of [RFC7807]. 
-            type: object
-            required:
-              - code
-            properties:
-              title:
-                $ref: "#/components/schemas/tppErrorTitle"
-              detail:
-                $ref: "#/components/schemas/tppErrorDetail"
-              code:
-                $ref: "#/components/schemas/MessageCode404_AIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error404_PIIS: 
-      description: |
-        Standardised definition of reporting error information according to [RFC7807] 
-        in case of a HTTP error code 404 for PIIS.
-      type: object
-      required:
-        - type
-        - code
-      properties:
-        type: 
-          description: |
-            A URI reference [RFC3986] that identifies the problem type. 
-            Remark For Future: These URI will be provided by NextGenPSD2 in future.
-          type: string
-          format: uri
-          maxLength: 70
-        title:
-          description: |
-            Short human readable description of error type. 
-            Could be in local language. 
-            To be provided by ASPSPs.
-          type: string
-          maxLength: 70
-        detail:
-          description: |
-            Detailed human readable text specific to this instance of the error. 
-            XPath might be used to point to the issue generating the error in addition.
-            Remark for Future: In future, a dedicated field might be introduced for the XPath.
-          type: string
-          maxLength: 500
-        code:
-          $ref: "#/components/schemas/MessageCode404_PIIS"
-        additionalErrors:
-          description: |
-            Array of Error Information Blocks.
-            
-            Might be used if more than one error is to be communicated
-          type: array
-          items: #ErrorInformation
-            description: This is a data element to support the declaration of additional errors in the context of [RFC7807]. 
-            type: object
-            required:
-              - code
-            properties:
-              title:
-                $ref: "#/components/schemas/tppErrorTitle"
-              detail:
-                $ref: "#/components/schemas/tppErrorDetail"
-              code:
-                $ref: "#/components/schemas/MessageCode404_PIIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error404_SBS: 
-      description: |
-        Standardised definition of reporting error information according to [RFC7807] 
-        in case of a HTTP error code 404 for signing baskets.
-      type: object
-      required:
-        - type
-        - code
-      properties:
-        type: 
-          description: |
-            A URI reference [RFC3986] that identifies the problem type. 
-            Remark For Future: These URI will be provided by NextGenPSD2 in future.
-          type: string
-          format: uri
-          maxLength: 70
-        title:
-          description: |
-            Short human readable description of error type. 
-            Could be in local language. 
-            To be provided by ASPSPs.
-          type: string
-          maxLength: 70
-        detail:
-          description: |
-            Detailed human readable text specific to this instance of the error. 
-            XPath might be used to point to the issue generating the error in addition.
-            Remark for Future: In future, a dedicated field might be introduced for the XPath.
-          type: string
-          maxLength: 500
-        code:
-          $ref: "#/components/schemas/MessageCode404_SBS"
-        additionalErrors:
-          description: |
-            Array of Error Information Blocks.
-            
-            Might be used if more than one error is to be communicated
-          type: array
-          items: #ErrorInformation
-            description: This is a data element to support the declaration of additional errors in the context of [RFC7807]. 
-            type: object
-            required:
-              - code
-            properties:
-              title:
-                $ref: "#/components/schemas/tppErrorTitle"
-              detail:
-                $ref: "#/components/schemas/tppErrorDetail"
-              code:
-                $ref: "#/components/schemas/MessageCode404_SBS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error405_PIS: 
-      description: |
-        Standardised definition of reporting error information according to [RFC7807] 
-        in case of a HTTP error code 405 for PIS.
-      type: object
-      required:
-        - type
-        - code
-      properties:
-        type: 
-          description: |
-            A URI reference [RFC3986] that identifies the problem type. 
-            Remark For Future: These URI will be provided by NextGenPSD2 in future.
-          type: string
-          format: uri
-          maxLength: 70
-        title:
-          description: |
-            Short human readable description of error type. 
-            Could be in local language. 
-            To be provided by ASPSPs.
-          type: string
-          maxLength: 70
-        detail:
-          description: |
-            Detailed human readable text specific to this instance of the error. 
-            XPath might be used to point to the issue generating the error in addition.
-            Remark for Future: In future, a dedicated field might be introduced for the XPath.
-          type: string
-          maxLength: 500
-        code:
-          $ref: "#/components/schemas/MessageCode405_PIS"
-        additionalErrors:
-          description: |
-            Array of Error Information Blocks.
-            
-            Might be used if more than one error is to be communicated
-          type: array
-          items: #ErrorInformation
-            description: This is a data element to support the declaration of additional errors in the context of [RFC7807]. 
-            type: object
-            required:
-              - code
-            properties:
-              title:
-                $ref: "#/components/schemas/tppErrorTitle"
-              detail:
-                $ref: "#/components/schemas/tppErrorDetail"
-              code:
-                $ref: "#/components/schemas/MessageCode405_PIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error405_PIS_CANC: 
-      description: |
-        Standardised definition of reporting error information according to [RFC7807] 
-        in case of a HTTP error code 405 for a pament cancelation (PIS).
-      type: object
-      required:
-        - type
-        - code
-      properties:
-        type: 
-          description: |
-            A URI reference [RFC3986] that identifies the problem type. 
-            Remark For Future: These URI will be provided by NextGenPSD2 in future.
-          type: string
-          format: uri
-          maxLength: 70
-        title:
-          description: |
-            Short human readable description of error type. 
-            Could be in local language. 
-            To be provided by ASPSPs.
-          type: string
-          maxLength: 70
-        detail:
-          description: |
-            Detailed human readable text specific to this instance of the error. 
-            XPath might be used to point to the issue generating the error in addition.
-            Remark for Future: In future, a dedicated field might be introduced for the XPath.
-          type: string
-          maxLength: 500
-        code:
-          $ref: "#/components/schemas/MessageCode405_PIS_CANC"
-        additionalErrors:
-          description: |
-            Array of Error Information Blocks.
-            
-            Might be used if more than one error is to be communicated
-          type: array
-          items: #ErrorInformation
-            description: This is a data element to support the declaration of additional errors in the context of [RFC7807]. 
-            type: object
-            required:
-              - code
-            properties:
-              title:
-                $ref: "#/components/schemas/tppErrorTitle"
-              detail:
-                $ref: "#/components/schemas/tppErrorDetail"
-              code:
-                $ref: "#/components/schemas/MessageCode405_PIS_CANC"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error405_AIS: 
-      description: |
-        Standardised definition of reporting error information according to [RFC7807] 
-        in case of a HTTP error code 405 for AIS.
-      type: object
-      required:
-        - type
-        - code
-      properties:
-        type: 
-          description: |
-            A URI reference [RFC3986] that identifies the problem type. 
-            Remark For Future: These URI will be provided by NextGenPSD2 in future.
-          type: string
-          format: uri
-          maxLength: 70
-        title:
-          description: |
-            Short human readable description of error type. 
-            Could be in local language. 
-            To be provided by ASPSPs.
-          type: string
-          maxLength: 70
-        detail:
-          description: |
-            Detailed human readable text specific to this instance of the error. 
-            XPath might be used to point to the issue generating the error in addition.
-            Remark for Future: In future, a dedicated field might be introduced for the XPath.
-          type: string
-          maxLength: 500
-        code:
-          $ref: "#/components/schemas/MessageCode405_AIS"
-        additionalErrors:
-          description: |
-            Array of Error Information Blocks.
-            
-            Might be used if more than one error is to be communicated
-          type: array
-          items: #ErrorInformation
-            description: This is a data element to support the declaration of additional errors in the context of [RFC7807]. 
-            type: object
-            required:
-              - code
-            properties:
-              title:
-                $ref: "#/components/schemas/tppErrorTitle"
-              detail:
-                $ref: "#/components/schemas/tppErrorDetail"
-              code:
-                $ref: "#/components/schemas/MessageCode405_AIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error405_PIIS: 
-      description: |
-        Standardised definition of reporting error information according to [RFC7807] 
-        in case of a HTTP error code 405 for PIIS.
-      type: object
-      required:
-        - type
-        - code
-      properties:
-        type: 
-          description: |
-            A URI reference [RFC3986] that identifies the problem type. 
-            Remark For Future: These URI will be provided by NextGenPSD2 in future.
-          type: string
-          format: uri
-          maxLength: 70
-        title:
-          description: |
-            Short human readable description of error type. 
-            Could be in local language. 
-            To be provided by ASPSPs.
-          type: string
-          maxLength: 70
-        detail:
-          description: |
-            Detailed human readable text specific to this instance of the error. 
-            XPath might be used to point to the issue generating the error in addition.
-            Remark for Future: In future, a dedicated field might be introduced for the XPath.
-          type: string
-          maxLength: 500
-        code:
-          $ref: "#/components/schemas/MessageCode405_PIIS"
-        additionalErrors:
-          description: |
-            Array of Error Information Blocks.
-            
-            Might be used if more than one error is to be communicated
-          type: array
-          items: #ErrorInformation
-            description: This is a data element to support the declaration of additional errors in the context of [RFC7807]. 
-            type: object
-            required:
-              - code
-            properties:
-              title:
-                $ref: "#/components/schemas/tppErrorTitle"
-              detail:
-                $ref: "#/components/schemas/tppErrorDetail"
-              code:
-                $ref: "#/components/schemas/MessageCode405_PIIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error405_SBS: 
-      description: |
-        Standardised definition of reporting error information according to [RFC7807] 
-        in case of a HTTP error code 405 for signing baskets.
-      type: object
-      required:
-        - type
-        - code
-      properties:
-        type: 
-          description: |
-            A URI reference [RFC3986] that identifies the problem type. 
-            Remark For Future: These URI will be provided by NextGenPSD2 in future.
-          type: string
-          format: uri
-          maxLength: 70
-        title:
-          description: |
-            Short human readable description of error type. 
-            Could be in local language. 
-            To be provided by ASPSPs.
-          type: string
-          maxLength: 70
-        detail:
-          description: |
-            Detailed human readable text specific to this instance of the error. 
-            XPath might be used to point to the issue generating the error in addition.
-            Remark for Future: In future, a dedicated field might be introduced for the XPath.
-          type: string
-          maxLength: 500
-        code:
-          $ref: "#/components/schemas/MessageCode405_SBS"
-        additionalErrors:
-          description: |
-            Array of Error Information Blocks.
-            
-            Might be used if more than one error is to be communicated
-          type: array
-          items: #ErrorInformation
-            description: This is a data element to support the declaration of additional errors in the context of [RFC7807]. 
-            type: object
-            required:
-              - code
-            properties:
-              title:
-                $ref: "#/components/schemas/tppErrorTitle"
-              detail:
-                $ref: "#/components/schemas/tppErrorDetail"
-              code:
-                $ref: "#/components/schemas/MessageCode405_SBS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error406_AIS: 
-      description: |
-        Standardised definition of reporting error information according to [RFC7807] 
-        in case of a HTTP error code 406 for AIS.
-      type: object
-      required:
-        - type
-        - code
-      properties:
-        type: 
-          description: |
-            A URI reference [RFC3986] that identifies the problem type. 
-            Remark For Future: These URI will be provided by NextGenPSD2 in future.
-          type: string
-          format: uri
-          maxLength: 70
-        title:
-          description: |
-            Short human readable description of error type. 
-            Could be in local language. 
-            To be provided by ASPSPs.
-          type: string
-          maxLength: 70
-        detail:
-          description: |
-            Detailed human readable text specific to this instance of the error. 
-            XPath might be used to point to the issue generating the error in addition.
-            Remark for Future: In future, a dedicated field might be introduced for the XPath.
-          type: string
-          maxLength: 500
-        code:
-          $ref: "#/components/schemas/MessageCode406_AIS"
-        additionalErrors:
-          description: |
-            Array of Error Information Blocks.
-            
-            Might be used if more than one error is to be communicated
-          type: array
-          items: #ErrorInformation
-            description: This is a data element to support the declaration of additional errors in the context of [RFC7807]. 
-            type: object
-            required:
-              - code
-            properties:
-              title:
-                $ref: "#/components/schemas/tppErrorTitle"
-              detail:
-                $ref: "#/components/schemas/tppErrorDetail"
-              code:
-                $ref: "#/components/schemas/MessageCode406_AIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error409_PIS: 
-      description: |
-        Standardised definition of reporting error information according to [RFC7807] 
-        in case of a HTTP error code 409 for PIS.
-      type: object
-      required:
-        - type
-        - code
-      properties:
-        type: 
-          description: |
-            A URI reference [RFC3986] that identifies the problem type. 
-            Remark For Future: These URI will be provided by NextGenPSD2 in future.
-          type: string
-          format: uri
-          maxLength: 70
-        title:
-          description: |
-            Short human readable description of error type. 
-            Could be in local language. 
-            To be provided by ASPSPs.
-          type: string
-          maxLength: 70
-        detail:
-          description: |
-            Detailed human readable text specific to this instance of the error. 
-            XPath might be used to point to the issue generating the error in addition.
-            Remark for Future: In future, a dedicated field might be introduced for the XPath.
-          type: string
-          maxLength: 500
-        code:
-          $ref: "#/components/schemas/MessageCode409_PIS"
-        additionalErrors:
-          description: |
-            Array of Error Information Blocks.
-            
-            Might be used if more than one error is to be communicated
-          type: array
-          items: #ErrorInformation
-            description: This is a data element to support the declaration of additional errors in the context of [RFC7807]. 
-            type: object
-            required:
-              - code
-            properties:
-              title:
-                $ref: "#/components/schemas/tppErrorTitle"
-              detail:
-                $ref: "#/components/schemas/tppErrorDetail"
-              code:
-                $ref: "#/components/schemas/MessageCode409_PIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error409_AIS: 
-      description: |
-        Standardised definition of reporting error information according to [RFC7807] 
-        in case of a HTTP error code 409 for AIS.
-      type: object
-      required:
-        - type
-        - code
-      properties:
-        type: 
-          description: |
-            A URI reference [RFC3986] that identifies the problem type. 
-            Remark For Future: These URI will be provided by NextGenPSD2 in future.
-          type: string
-          format: uri
-          maxLength: 70
-        title:
-          description: |
-            Short human readable description of error type. 
-            Could be in local language. 
-            To be provided by ASPSPs.
-          type: string
-          maxLength: 70
-        detail:
-          description: |
-            Detailed human readable text specific to this instance of the error. 
-            XPath might be used to point to the issue generating the error in addition.
-            Remark for Future: In future, a dedicated field might be introduced for the XPath.
-          type: string
-          maxLength: 500
-        code:
-          $ref: "#/components/schemas/MessageCode409_AIS"
-        additionalErrors:
-          description: |
-            Array of Error Information Blocks.
-            
-            Might be used if more than one error is to be communicated
-          type: array
-          items: #ErrorInformation
-            description: This is a data element to support the declaration of additional errors in the context of [RFC7807]. 
-            type: object
-            required:
-              - code
-            properties:
-              title:
-                $ref: "#/components/schemas/tppErrorTitle"
-              detail:
-                $ref: "#/components/schemas/tppErrorDetail"
-              code:
-                $ref: "#/components/schemas/MessageCode409_AIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error409_PIIS: 
-      description: |
-        Standardised definition of reporting error information according to [RFC7807] 
-        in case of a HTTP error code 409 for PIIS.
-      type: object
-      required:
-        - type
-        - code
-      properties:
-        type: 
-          description: |
-            A URI reference [RFC3986] that identifies the problem type. 
-            Remark For Future: These URI will be provided by NextGenPSD2 in future.
-          type: string
-          format: uri
-          maxLength: 70
-        title:
-          description: |
-            Short human readable description of error type. 
-            Could be in local language. 
-            To be provided by ASPSPs.
-          type: string
-          maxLength: 70
-        detail:
-          description: |
-            Detailed human readable text specific to this instance of the error. 
-            XPath might be used to point to the issue generating the error in addition.
-            Remark for Future: In future, a dedicated field might be introduced for the XPath.
-          type: string
-          maxLength: 500
-        code:
-          $ref: "#/components/schemas/MessageCode409_PIIS"
-        additionalErrors:
-          description: |
-            Array of Error Information Blocks.
-            
-            Might be used if more than one error is to be communicated
-          type: array
-          items: #ErrorInformation
-            description: This is a data element to support the declaration of additional errors in the context of [RFC7807]. 
-            type: object
-            required:
-              - code
-            properties:
-              title:
-                $ref: "#/components/schemas/tppErrorTitle"
-              detail:
-                $ref: "#/components/schemas/tppErrorDetail"
-              code:
-                $ref: "#/components/schemas/MessageCode409_PIIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error409_SBS: 
-      description: |
-        Standardised definition of reporting error information according to [RFC7807] 
-        in case of a HTTP error code 409 for signing baskets.
-      type: object
-      required:
-        - type
-        - code
-      properties:
-        type: 
-          description: |
-            A URI reference [RFC3986] that identifies the problem type. 
-            Remark For Future: These URI will be provided by NextGenPSD2 in future.
-          type: string
-          format: uri
-          maxLength: 70
-        title:
-          description: |
-            Short human readable description of error type. 
-            Could be in local language. 
-            To be provided by ASPSPs.
-          type: string
-          maxLength: 70
-        detail:
-          description: |
-            Detailed human readable text specific to this instance of the error. 
-            XPath might be used to point to the issue generating the error in addition.
-            Remark for Future: In future, a dedicated field might be introduced for the XPath.
-          type: string
-          maxLength: 500
-        code:
-          $ref: "#/components/schemas/MessageCode409_SBS"
-        additionalErrors:
-          description: |
-            Array of Error Information Blocks.
-            
-            Might be used if more than one error is to be communicated
-          type: array
-          items: #ErrorInformation
-            description: This is a data element to support the declaration of additional errors in the context of [RFC7807]. 
-            type: object
-            required:
-              - code
-            properties:
-              title:
-                $ref: "#/components/schemas/tppErrorTitle"
-              detail:
-                $ref: "#/components/schemas/tppErrorDetail"
-              code:
-                $ref: "#/components/schemas/MessageCode409_SBS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error429_AIS: 
-      description: |
-        Standardised definition of reporting error information according to [RFC7807] 
-        in case of a HTTP error code 429 for AIS.
-      type: object
-      required:
-        - type
-        - code
-      properties:
-        type: 
-          description: |
-            A URI reference [RFC3986] that identifies the problem type. 
-            Remark For Future: These URI will be provided by NextGenPSD2 in future.
-          type: string
-          format: uri
-          maxLength: 70
-        title:
-          description: |
-            Short human readable description of error type. 
-            Could be in local language. 
-            To be provided by ASPSPs.
-          type: string
-          maxLength: 70
-        detail:
-          description: |
-            Detailed human readable text specific to this instance of the error. 
-            XPath might be used to point to the issue generating the error in addition.
-            Remark for Future: In future, a dedicated field might be introduced for the XPath.
-          type: string
-          maxLength: 500
-        code:
-          $ref: "#/components/schemas/MessageCode429_AIS"
-        additionalErrors:
-          description: |
-            Array of Error Information Blocks.
-            
-            Might be used if more than one error is to be communicated
-          type: array
-          items: #ErrorInformation
-            description: |
-              This is a data element to support the declaration of additional errors in the context of [RFC7807] 
-              in case of a HTTP error code 429 for. 
-            type: object
-            required:
-              - code
-            properties:
-              title:
-                $ref: "#/components/schemas/tppErrorTitle"
-              detail:
-                $ref: "#/components/schemas/tppErrorDetail"
-              code:
-                $ref: "#/components/schemas/MessageCode429_AIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-      #example: 
-        #$ref: "#/components/examples/RFC7807_ErrorInfoBody"
-
-
-    Error400_NG_PIS: 
-      description: |
-        NextGenPSD2 specific definition of reporting error information in case of a HTTP error code 400.
-      type: object
-      properties:
-        tppMessages:
-          type: array
-          items:
-            $ref: "#/components/schemas/tppMessage400_PIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error400_NG_AIS: 
-      description: |
-        NextGenPSD2 specific definition of reporting error information in case of a HTTP error code 400.
-      type: object
-      properties:
-        tppMessages:
-          type: array
-          items:
-            $ref: "#/components/schemas/tppMessage400_AIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error400_NG_PIIS: 
-      description: |
-        NextGenPSD2 specific definition of reporting error information in case of a HTTP error code 400.
-      type: object
-      properties:
-        tppMessages:
-          type: array
-          items:
-            $ref: "#/components/schemas/tppMessage400_PIIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error400_NG_SBS: 
-      description: |
-        NextGenPSD2 specific definition of reporting error information in case of a HTTP error code 400.
-      type: object
-      properties:
-        tppMessages:
-          type: array
-          items:
-            $ref: "#/components/schemas/tppMessage400_SBS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-
-    Error401_NG_PIS: 
-      description: |
-        NextGenPSD2 specific definition of reporting error information in case of a HTTP error code 401.
-      type: object
-      properties:
-        tppMessages:
-          type: array
-          items:
-            $ref: "#/components/schemas/tppMessage401_PIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error401_NG_AIS: 
-      description: |
-        NextGenPSD2 specific definition of reporting error information in case of a HTTP error code 401.
-      type: object
-      properties:
-        tppMessages:
-          type: array
-          items:
-            $ref: "#/components/schemas/tppMessage401_AIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error401_NG_PIIS: 
-      description: |
-        NextGenPSD2 specific definition of reporting error information in case of a HTTP error code 401.
-      type: object
-      properties:
-        tppMessages:
-          type: array
-          items:
-            $ref: "#/components/schemas/tppMessage401_PIIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error401_NG_SBS: 
-      description: |
-        NextGenPSD2 specific definition of reporting error information in case of a HTTP error code 401.
-      type: object
-      properties:
-        tppMessages:
-          type: array
-          items:
-            $ref: "#/components/schemas/tppMessage401_SBS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error403_NG_PIS: 
-      description: |
-        NextGenPSD2 specific definition of reporting error information in case of a HTTP error code 403.
-      type: object
-      properties:
-        tppMessages:
-          type: array
-          items:
-            $ref: "#/components/schemas/tppMessage403_PIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error403_NG_AIS: 
-      description: |
-        NextGenPSD2 specific definition of reporting error information in case of a HTTP error code 403.
-      type: object
-      properties:
-        tppMessages:
-          type: array
-          items:
-            $ref: "#/components/schemas/tppMessage403_AIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error403_NG_PIIS: 
-      description: |
-        NextGenPSD2 specific definition of reporting error information in case of a HTTP error code 403.
-      type: object
-      properties:
-        tppMessages:
-          type: array
-          items:
-            $ref: "#/components/schemas/tppMessage403_PIIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error403_NG_SBS: 
-      description: |
-        NextGenPSD2 specific definition of reporting error information in case of a HTTP error code 403.
-      type: object
-      properties:
-        tppMessages:
-          type: array
-          items:
-            $ref: "#/components/schemas/tppMessage403_SBS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error404_NG_PIS: 
-      description: |
-        NextGenPSD2 specific definition of reporting error information in case of a HTTP error code 404.
-      type: object
-      properties:
-        tppMessages:
-          type: array
-          items:
-            $ref: "#/components/schemas/tppMessage404_PIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error404_NG_AIS: 
-      description: |
-        NextGenPSD2 specific definition of reporting error information in case of a HTTP error code 404.
-      type: object
-      properties:
-        tppMessages:
-          type: array
-          items:
-            $ref: "#/components/schemas/tppMessage404_AIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error404_NG_PIIS: 
-      description: |
-        NextGenPSD2 specific definition of reporting error information in case of a HTTP error code 404.
-      type: object
-      properties:
-        tppMessages:
-          type: array
-          items:
-            $ref: "#/components/schemas/tppMessage404_PIIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error404_NG_SBS: 
-      description: |
-        NextGenPSD2 specific definition of reporting error information in case of a HTTP error code 404.
-      type: object
-      properties:
-        tppMessages:
-          type: array
-          items:
-            $ref: "#/components/schemas/tppMessage404_SBS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error405_NG_PIS: 
-      description: |
-        NextGenPSD2 specific definition of reporting error information in case of a HTTP error code 401.
-      type: object
-      properties:
-        tppMessages:
-          type: array
-          items:
-            $ref: "#/components/schemas/tppMessage405_PIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error405_NG_PIS_CANC: 
-      description: |
-        NextGenPSD2 specific definition of reporting error information in case of a HTTP error code 401.
-      type: object
-      properties:
-        tppMessages:
-          type: array
-          items:
-            $ref: "#/components/schemas/tppMessage405_PIS_CANC"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error405_NG_AIS: 
-      description: |
-        NextGenPSD2 specific definition of reporting error information in case of a HTTP error code 401.
-      type: object
-      properties:
-        tppMessages:
-          type: array
-          items:
-            $ref: "#/components/schemas/tppMessage405_AIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error405_NG_PIIS: 
-      description: |
-        NextGenPSD2 specific definition of reporting error information in case of a HTTP error code 401.
-      type: object
-      properties:
-        tppMessages:
-          type: array
-          items:
-            $ref: "#/components/schemas/tppMessage405_PIIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error405_NG_SBS: 
-      description: |
-        NextGenPSD2 specific definition of reporting error information in case of a HTTP error code 401.
-      type: object
-      properties:
-        tppMessages:
-          type: array
-          items:
-            $ref: "#/components/schemas/tppMessage405_SBS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-          
-
-    Error406_NG_AIS: 
-      description: |
-        NextGenPSD2 specific definition of reporting error information in case of a HTTP error code 406.
-      type: object
-      properties:
-        tppMessages:
-          type: array
-          items:
-            $ref: "#/components/schemas/tppMessage406_AIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-
-
-    Error409_NG_PIS: 
-      description: |
-        NextGenPSD2 specific definition of reporting error information in case of a HTTP error code 409.
-      type: object
-      properties:
-        tppMessages:
-          type: array
-          items:
-            $ref: "#/components/schemas/tppMessage409_PIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-      example:
-        [{
-          "category": "ERROR",
-          "code": "STATUS_INVALID",
-          "text": "additional text information of the ASPSP up to 500 characters"
-        }]
-
-
-    Error409_NG_AIS: 
-      description: |
-        NextGenPSD2 specific definition of reporting error information in case of a HTTP error code 409.
-      type: object
-      properties:
-        tppMessages:
-          type: array
-          items:
-            $ref: "#/components/schemas/tppMessage409_AIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-      example:
-        [{
-          "category": "ERROR",
-          "code": "STATUS_INVALID",
-          "text": "additional text information of the ASPSP up to 500 characters"
-        }]
-
-
-    Error409_NG_PIIS: 
-      description: |
-        NextGenPSD2 specific definition of reporting error information in case of a HTTP error code 409.
-      type: object
-      properties:
-        tppMessages:
-          type: array
-          items:
-            $ref: "#/components/schemas/tppMessage409_PIIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-      example:
-        [{
-          "category": "ERROR",
-          "code": "STATUS_INVALID",
-          "text": "additional text information of the ASPSP up to 500 characters"
-        }]
-
-
-    Error409_NG_SBS: 
-      description: |
-        NextGenPSD2 specific definition of reporting error information in case of a HTTP error code 409.
-      type: object
-      properties:
-        tppMessages:
-          type: array
-          items:
-            $ref: "#/components/schemas/tppMessage409_SBS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-      example:
-        [{
-          "category": "ERROR",
-          "code": "STATUS_INVALID",
-          "text": "additional text information of the ASPSP up to 500 characters"
-        }]
-
-
-    Error429_NG_AIS: 
-      description: |
-        NextGenPSD2 specific definition of reporting error information in case of a HTTP error code 429.
-      type: object
-      properties:
-        tppMessages:
-          type: array
-          items:
-            $ref: "#/components/schemas/tppMessage429_AIS"
-        _links:
-          $ref: "#/components/schemas/_linksAll"
-      example:
-        [{
-          "category": "ERROR",
-          "code": "ACCESS_EXCEEDED",
-          "text": "additional text information of the ASPSP up to 500 characters"
-        }]
-
+          maxLength: 35
 
     icelandicPurpose:
       description: |
@@ -12524,13 +9958,9 @@ components:
           $ref: "#/components/headers/X-Request-ID"
       
       content:
-        application/json:
-          schema:
-            $ref: "#/components/schemas/Error400_NG_AIS" 
-
         application/problem+json:
           schema:
-            $ref: "#/components/schemas/Error400_AIS" 
+            $ref: "#/components/schemas/Error_RFC7807" 
 
 
     BAD_REQUEST_400_PIS:
@@ -12543,13 +9973,9 @@ components:
           $ref: "#/components/headers/X-Request-ID"
       
       content:
-        application/json:
-          schema:
-            $ref: "#/components/schemas/Error400_NG_PIS" 
-
         application/problem+json:
           schema:
-            $ref: "#/components/schemas/Error400_PIS" 
+            $ref: "#/components/schemas/Error_RFC7807" 
 
 
     BAD_REQUEST_400_PIIS:
@@ -12562,13 +9988,9 @@ components:
           $ref: "#/components/headers/X-Request-ID"
       
       content:
-        application/json:
-          schema:
-            $ref: "#/components/schemas/Error400_NG_AIS" 
-
         application/problem+json:
           schema:
-            $ref: "#/components/schemas/Error400_AIS" 
+            $ref: "#/components/schemas/Error_RFC7807" 
 
 
     BAD_REQUEST_400_SBS:
@@ -12581,13 +10003,9 @@ components:
           $ref: "#/components/headers/X-Request-ID"
       
       content:
-        application/json:
-          schema:
-            $ref: "#/components/schemas/Error400_NG_SBS" 
-
         application/problem+json:
           schema:
-            $ref: "#/components/schemas/Error400_SBS" 
+            $ref: "#/components/schemas/Error_RFC7807" 
 
 
     UNAUTHORIZED_401_PIS:
@@ -12600,13 +10018,9 @@ components:
           $ref: "#/components/headers/X-Request-ID"
       
       content:
-        application/json:
-          schema:
-            $ref: "#/components/schemas/Error401_NG_PIS" 
-
         application/problem+json:
           schema:
-             $ref: "#/components/schemas/Error401_PIS" 
+             $ref: "#/components/schemas/Error_RFC7807" 
 
     UNAUTHORIZED_401_AIS:
       description: Unauthorized
@@ -12618,13 +10032,9 @@ components:
           $ref: "#/components/headers/X-Request-ID"
       
       content:
-        application/json:
-          schema:
-            $ref: "#/components/schemas/Error401_NG_AIS" 
-
         application/problem+json:
           schema:
-             $ref: "#/components/schemas/Error401_AIS" 
+             $ref: "#/components/schemas/Error_RFC7807" 
 
     UNAUTHORIZED_401_PIIS:
       description: Unauthorized
@@ -12636,13 +10046,9 @@ components:
           $ref: "#/components/headers/X-Request-ID"
       
       content:
-        application/json:
-          schema:
-            $ref: "#/components/schemas/Error401_NG_PIIS" 
-
         application/problem+json:
           schema:
-             $ref: "#/components/schemas/Error401_PIIS" 
+             $ref: "#/components/schemas/Error_RFC7807" 
 
     UNAUTHORIZED_401_SBS:
       description: Unauthorized
@@ -12654,13 +10060,9 @@ components:
           $ref: "#/components/headers/X-Request-ID"
       
       content:
-        application/json:
-          schema:
-            $ref: "#/components/schemas/Error401_NG_SBS" 
-
         application/problem+json:
           schema:
-             $ref: "#/components/schemas/Error401_SBS" 
+             $ref: "#/components/schemas/Error_RFC7807" 
             
 
     FORBIDDEN_403_PIS:
@@ -12673,13 +10075,9 @@ components:
           $ref: "#/components/headers/X-Request-ID"
       
       content:
-        application/json:
-          schema:
-            $ref: "#/components/schemas/Error403_NG_PIS" 
-
         application/problem+json:
           schema:
-             $ref: "#/components/schemas/Error403_PIS" 
+             $ref: "#/components/schemas/Error_RFC7807" 
 
 
     FORBIDDEN_403_AIS:
@@ -12692,13 +10090,9 @@ components:
           $ref: "#/components/headers/X-Request-ID"
       
       content:
-        application/json:
-          schema:
-            $ref: "#/components/schemas/Error403_NG_AIS" 
-
         application/problem+json:
           schema:
-             $ref: "#/components/schemas/Error403_AIS" 
+             $ref: "#/components/schemas/Error_RFC7807" 
 
 
     FORBIDDEN_403_PIIS:
@@ -12711,13 +10105,9 @@ components:
           $ref: "#/components/headers/X-Request-ID"
       
       content:
-        application/json:
-          schema:
-            $ref: "#/components/schemas/Error403_NG_PIIS" 
-
         application/problem+json:
           schema:
-             $ref: "#/components/schemas/Error403_PIIS" 
+             $ref: "#/components/schemas/Error_RFC7807" 
 
 
     FORBIDDEN_403_SBS:
@@ -12730,13 +10120,9 @@ components:
           $ref: "#/components/headers/X-Request-ID"
       
       content:
-        application/json:
-          schema:
-            $ref: "#/components/schemas/Error403_NG_SBS" 
-
         application/problem+json:
           schema:
-             $ref: "#/components/schemas/Error403_SBS" 
+             $ref: "#/components/schemas/Error_RFC7807" 
 
 
     NOT_FOUND_404_PIS:
@@ -12749,13 +10135,9 @@ components:
           $ref: "#/components/headers/X-Request-ID"
       
       content:
-        application/json:
-          schema:
-            $ref: "#/components/schemas/Error404_NG_PIS" 
-
         application/problem+json:
           schema:
-             $ref: "#/components/schemas/Error404_PIS" 
+             $ref: "#/components/schemas/Error_RFC7807" 
 
 
     NOT_FOUND_404_AIS:
@@ -12768,13 +10150,9 @@ components:
           $ref: "#/components/headers/X-Request-ID"
       
       content:
-        application/json:
-          schema:
-            $ref: "#/components/schemas/Error404_NG_AIS" 
-
         application/problem+json:
           schema:
-             $ref: "#/components/schemas/Error404_AIS" 
+             $ref: "#/components/schemas/Error_RFC7807" 
 
 
     NOT_FOUND_404_PIIS:
@@ -12787,13 +10165,9 @@ components:
           $ref: "#/components/headers/X-Request-ID"
       
       content:
-        application/json:
-          schema:
-            $ref: "#/components/schemas/Error404_NG_PIIS" 
-
         application/problem+json:
           schema:
-             $ref: "#/components/schemas/Error404_PIIS" 
+             $ref: "#/components/schemas/Error_RFC7807" 
 
 
     NOT_FOUND_404_SBS:
@@ -12806,13 +10180,9 @@ components:
           $ref: "#/components/headers/X-Request-ID"
       
       content:
-        application/json:
-          schema:
-            $ref: "#/components/schemas/Error404_NG_SBS" 
-
         application/problem+json:
           schema:
-             $ref: "#/components/schemas/Error404_SBS" 
+             $ref: "#/components/schemas/Error_RFC7807" 
 
 
     METHOD_NOT_ALLOWED_405_PIS:
@@ -12825,13 +10195,9 @@ components:
           $ref: "#/components/headers/X-Request-ID"
       
       content:
-        application/json:
-          schema:
-            $ref: "#/components/schemas/Error405_NG_PIS" 
-
         application/problem+json:
           schema:
-             $ref: "#/components/schemas/Error405_PIS" 
+             $ref: "#/components/schemas/Error_RFC7807" 
 
 
     METHOD_NOT_ALLOWED_405_PIS_CANC:
@@ -12844,13 +10210,9 @@ components:
           $ref: "#/components/headers/X-Request-ID"
       
       content:
-        application/json:
-          schema:
-            $ref: "#/components/schemas/Error405_NG_PIS_CANC" 
-
         application/problem+json:
           schema:
-             $ref: "#/components/schemas/Error405_PIS_CANC" 
+             $ref: "#/components/schemas/Error_RFC7807" 
 
 
     METHOD_NOT_ALLOWED_405_AIS:
@@ -12863,13 +10225,9 @@ components:
           $ref: "#/components/headers/X-Request-ID"
       
       content:
-        application/json:
-          schema:
-            $ref: "#/components/schemas/Error405_NG_AIS" 
-
         application/problem+json:
           schema:
-             $ref: "#/components/schemas/Error405_AIS" 
+             $ref: "#/components/schemas/Error_RFC7807" 
 
 
     METHOD_NOT_ALLOWED_405_PIIS:
@@ -12882,13 +10240,9 @@ components:
           $ref: "#/components/headers/X-Request-ID"
       
       content:
-        application/json:
-          schema:
-            $ref: "#/components/schemas/Error405_NG_PIIS" 
-
         application/problem+json:
           schema:
-             $ref: "#/components/schemas/Error405_PIIS" 
+             $ref: "#/components/schemas/Error_RFC7807" 
 
 
     METHOD_NOT_ALLOWED_405_SBS:
@@ -12901,13 +10255,9 @@ components:
           $ref: "#/components/headers/X-Request-ID"
       
       content:
-        application/json:
-          schema:
-            $ref: "#/components/schemas/Error405_NG_SBS" 
-
         application/problem+json:
           schema:
-             $ref: "#/components/schemas/Error405_SBS" 
+             $ref: "#/components/schemas/Error_RFC7807" 
 
 
     NOT_ACCEPTABLE_406_PIS:
@@ -12932,12 +10282,9 @@ components:
           $ref: "#/components/headers/X-Request-ID"
       
       content:
-        application/json:
-          schema:
-            $ref: "#/components/schemas/Error406_NG_AIS" 
         application/problem+json:
           schema:
-             $ref: "#/components/schemas/Error406_AIS" 
+             $ref: "#/components/schemas/Error_RFC7807" 
 
 
     NOT_ACCEPTABLE_406_PIIS:
@@ -13015,13 +10362,10 @@ components:
         X-Request-ID:
           $ref: "#/components/headers/X-Request-ID"
       content:
-        application/json:
-          schema:
-             $ref: "#/components/schemas/Error409_NG_PIS"
-          
+ 
         application/problem+json:
           schema:
-             $ref: "#/components/schemas/Error409_PIS"
+             $ref: "#/components/schemas/Error_RFC7807"
 
 
     CONFLICT_409_AIS: 
@@ -13032,14 +10376,10 @@ components:
           $ref: "#/components/headers/Location"
         X-Request-ID:
           $ref: "#/components/headers/X-Request-ID"
-      content:
-        application/json:
-          schema:
-             $ref: "#/components/schemas/Error409_NG_AIS"
-          
+      content:   
         application/problem+json:
           schema:
-             $ref: "#/components/schemas/Error409_AIS"
+             $ref: "#/components/schemas/Error_RFC7807"
 
 
     CONFLICT_409_PIIS: 
@@ -13051,13 +10391,9 @@ components:
         X-Request-ID:
           $ref: "#/components/headers/X-Request-ID"
       content:
-        application/json:
-          schema:
-             $ref: "#/components/schemas/Error409_NG_PIIS"
-          
         application/problem+json:
           schema:
-             $ref: "#/components/schemas/Error409_PIIS"
+             $ref: "#/components/schemas/Error_RFC7807"
 
 
     CONFLICT_409_SBS: 
@@ -13069,13 +10405,9 @@ components:
         X-Request-ID:
           $ref: "#/components/headers/X-Request-ID"
       content:
-        application/json:
-          schema:
-             $ref: "#/components/schemas/Error409_NG_SBS"
-          
         application/problem+json:
           schema:
-             $ref: "#/components/schemas/Error409_SBS"
+             $ref: "#/components/schemas/Error_RFC7807"
 
 
     UNSUPPORTED_MEDIA_TYPE_415_AIS:
@@ -13144,13 +10476,10 @@ components:
           $ref: "#/components/headers/X-Request-ID"
       
       content:
-        application/json:
-          schema:
-            $ref: "#/components/schemas/Error429_NG_AIS" 
         application/problem+json:
 
           schema:
-             $ref: "#/components/schemas/Error429_AIS" 
+             $ref: "#/components/schemas/Error_RFC7807" 
 
 
     TOO_MANY_REQUESTS_429_PIIS:
